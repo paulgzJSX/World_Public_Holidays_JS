@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Public Holidays</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h2><a href="" class="home-link">Holiday Calendar</a></h2>
+            <form>
+                <select name="country" id="country"></select>
+                <select name="year" id="year"></select>
+            </form>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="upcoming">
+            <h2>Upcoming Holidays Worldwide</h2>
+            <div class="upcoming-table">
+                <div class="upcoming-table-header">
+                    <h4 class="upcoming-image">Country</h4>
+                    <h4 class="upcoming-date">Date</h4>
+                    <h4 class="upcoming-name">Holiday Name</h4>
+                    <h4 class="upcoming-type">Type</h4>
+                    <h4 class="upcoming-local-name">Local Name</h4>
+                </div>
+
+                <div class="upcoming-rows">
+                  
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="holidays"></div>
+
+            <div class="holidays-table">
+                <div class="table-header">
+                    <h4 class="date">Date</h4>
+                    <h4 class="name">Holiday Name</h4>
+                    <h4 class="type">Type</h4>
+                    <h4 class="local-name">Local Name</h4>
+                </div>
+
+                <div class="rows"></div>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src='./script.js'></script>
+</body>
+
+</html>

@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+
+/* Header Nav Section */
+
+header {
+    width: 100vw;
+    height: 70px;
+    position: fixed;
+    z-index: 999;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(129, 82, 173);
+    color: #fff;
+    width: 70vw;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+form select {
+    font-family: inherit;
+    padding: .4rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin-right: .3rem;
+}
+
+form select option {
+    font-family: inherit;
+}
+
+
+/* Main Content Area */
+
+main {
+    width: 100vw;
+    padding: 3rem 10rem;
+    position: relative;
+    top: 70px;
+}
+
+
+/* Holidays by Country Section */
+
+.holidays {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .8rem;
+}
+
+.heading img {
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgb(189, 183, 188);
+    margin-right: 1rem;
+    object-fit: cover;
+}
+
+.holidays-table {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.table-header {
+    display: none;
+}
+
+.table-header.active {
+    display: flex;
+    margin-bottom: .3rem;
+    background-color: rgb(210, 188, 231);
+    padding: .1rem 2rem;
+    border-radius: 10px;
+}
+
+.rows img {
+    height: 20px;
+    width: 20px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: .5rem;
+    padding: .1rem 2rem;
+    cursor: pointer;
+}
+
+.row:nth-child(even) {
+    background-color: rgb(240, 236, 243);
+    border-radius: 10px;
+}
+
+.date {
+    width: 10rem;
+}
+
+.name {
+    width: 15rem;
+}
+
+.type {
+    width: 10rem;
+}
+
+.local-name {
+    width: 20rem;
+}
+
+
+/* Upcoming Holidays Section */
+
+.upcoming {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.upcoming h2 {
+    margin-bottom: 2rem;
+}
+
+.upcoming-table {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.upcoming-table-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(210, 188, 231);
+    border-radius: 10px;
+    padding: .1rem 2rem;
+    margin-bottom: .3rem;
+}
+
+.upcoming-row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: .1rem 2rem;
+    margin-bottom: .5rem;
+}
+
+.upcoming-row:nth-child(even) {
+    background-color: rgb(240, 236, 243);
+    border-radius: 10px;
+}
+
+.upcoming-image {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 15rem;
+}
+
+.upcoming-image img {
+    width: 20px;
+    height: 20px;
+    margin-right: .5rem;
+}
+
+.upcoming-date {
+    width: 10rem;
+}
+
+.upcoming-name {
+    width: 15rem;
+}
+
+.upcoming-type {
+    width: 10rem;
+}
+
+.upcoming-local-name {
+    width: 15rem;
+}
+
+
+
+@media screen and (max-width: 1190px) {
+    .upcoming-type {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .upcoming-table {
+        width: 500px;
+    }
+    
+    .upcoming-local-name {
+        display: none;
+    }
+
+    .holidays-table {
+        width: 500px;
+    }
+
+    .type {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    form select {
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    main {
+        padding: 1rem;
+    }
+
+    .local-name {
+        display: none;
+    }
+
+    .upcoming-table {
+        font-size: 1rem;
+        margin: 0 1rem;
+    }
+
+    .holidays-table {
+        width: 300px;
+    }
+
+    .heading {
+        display: none;
+    }
+
+    .holidays p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    nav {
+        justify-content: center;
+    }
+
+    nav h2 {
+        display: none;
+    }
+
+    .upcoming-table {
+        font-size: 1rem;
+        width: 300px;
+    }
+
+    .upcoming-image {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    #year {
+        display: none;
+    }
+
+
+}
